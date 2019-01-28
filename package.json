@@ -1,0 +1,24 @@
+{
+  "name": "yhcr-validator-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatinterfaceguy/yhcr-validator-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatinterfaceguy/yhcr-validator-example/issues"
+  },
+  "homepage": "https://github.com/thatinterfaceguy/yhcr-validator-example#readme",
+  "dependencies": {
+    "fhir": "^4.5.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
+  }
+}

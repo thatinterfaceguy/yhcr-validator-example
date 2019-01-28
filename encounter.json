@@ -1,0 +1,64 @@
+{
+	"resourceType": "Encounter",
+	"meta": {
+		"profile": [
+			"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+		],
+		"tag": [{
+			"system": "http://yas.nhs.uk/quality-measure",
+			"code": "disposal"
+		}]
+	},
+	"identifier": [{
+		"system": "https://tools.ietf.org/html/rfc4122",
+		"value": "31a947f6-b124-4137-b272-773ddffe9fb4"
+	}],
+	"status": "in-progress",
+	"class": {
+		"system": "http://hl7.org/fhir/v3/ActCode",
+		"code": "EMER",
+		"display": "emergency"
+	},
+	"type": [{
+		"coding": [{
+			"system": "https://www.datadictionary.nhs.uk",
+			"code": "1",
+			"display": "First attendance face to face"
+		}]
+	}],
+	"subject": {
+		"reference": "Patient/1181",
+		"display": "MS Lauren CORR"
+	},
+	"participant": [{
+			"type": [{
+				"coding": [{
+					"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+					"code": "PART",
+					"display": "Participation"
+				}]
+			}],
+			"individual": {
+				"reference": "Practitioner/203531",
+				"display": "Mrs N Bryant"
+			}
+		},
+		{
+			"type": [{
+				"coding": [{
+					"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+					"code": "ATND",
+					"display": "attender"
+				}]
+			}],
+			"individual": {
+				"reference": "Practitioner/203530",
+				"display": "Dr Doris MacKay"
+			}
+		}
+	],
+	"period": {
+		"start": "2017-05-01T09:00:00+00:00",
+		"end": "2017-05-01T10:00:00+00:00"
+	}
+}
